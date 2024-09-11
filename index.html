@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+<style>
+
+   body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: rgb(29, 166, 166);
+        box-sizing: border-box;
+
+        }
+
+    .tb {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-sizing: border-box; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+
+    .name {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        box-sizing: border-box; 
+        font-size:medium;
+        font-weight: bold;
+
+         }
+
+    .submit {
+        background-color: rgb(14, 151, 197);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+          }
+
+    .submit:hover {
+        background-color: #45b549;
+   }
+    </style>
+
+</head>
+  <body>
+
+    <form action="/" method="post">
+       <table class="tb">
+        <tr><th><h2 align="center"><u>WEATHER APP</u></h2> </th></tr>
+           <tr><td>Enter Your City Name:</td></tr> <tr><td><input type="text" class="name" name="cityInput" placeholder="Enter city" required> </td></tr>
+           <tr><td></td></tr>
+           <tr><td><input type="submit" class="submit" value="Get Weather Report"></td></tr>
+      </table>
+    </form>
+</body>
+</html>
